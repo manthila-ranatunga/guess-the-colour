@@ -24,6 +24,10 @@ h2 {
   font-weight: bold;
 }
 
+br {
+  line-height: 1rem;
+}
+
 #title-container {
   margin: 30px auto 0 auto;
   background-color: #47a8bd;
@@ -34,12 +38,12 @@ h2 {
 
 #option-container {
   margin: 30px auto 0 auto;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 #option-container h2 {
   display: inline;
-  padding: 10px 100px;
+  padding: 10px 30px;
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
@@ -95,7 +99,7 @@ h2 {
 }
 
 #colour-container button {
-  margin: 0 20px;
+  margin: -20px 20px 40px 20px;
   padding: 70px;
   cursor: pointer;
   border-width: 0;

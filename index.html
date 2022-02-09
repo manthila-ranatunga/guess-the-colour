@@ -12,9 +12,11 @@
       <h1 id="title">GUESS THE COLOUR!</h1>
     </div>
     <div id="option-container">
-      <button id="new-game-btn" onclick="newGame()">NEW GAME</button>
+      <button id="new-game-btn" onclick="resetStreak(); newGame()">
+        NEW GAME
+      </button>
       <h2 id="streak-el">STREAK: 0</h2>
-      <!-- <h2>HIGH SCORE: 0</h2> -->
+      <h2 id="high-score-el">HIGH SCORE: 0</h2>
     </div>
     <div id="instruction-container">
       <h4 id="instructions">
@@ -26,9 +28,9 @@
         <h2 id="rgb-el">RGB(0, 0, 0)</h2>
       </div>
       <div id="colour-container">
-        <button id="left-colour" onclick="checkColour()"></button>
-        <button id="middle-colour" onclick="checkColour()"></button>
-        <button id="right-colour" onclick="checkColour()"></button>
+        <button id="left-colour" onclick="leftClicked()"></button>
+        <button id="middle-colour" onclick="middleClicked()"></button>
+        <button id="right-colour" onclick="rightClicked()"></button>
       </div>
     </div>
   </body>
