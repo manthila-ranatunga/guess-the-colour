@@ -12,6 +12,7 @@ body {
 h1 {
   font-size: 3rem;
   font-weight: bold;
+  line-height: 3rem;
 }
 
 h4 {
@@ -91,6 +92,7 @@ br {
   text-align: center;
   color: white;
   margin: 10px auto 0 auto;
+  line-height: 3rem;
 }
 
 #colour-container {
@@ -104,4 +106,25 @@ br {
   cursor: pointer;
   border-width: 0;
   border-radius: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  #option-container {
+    display: flex;
+  }
+  #option-container h2 {
+    font-size: 1rem;
+  }
+  #rgb-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: -20px;
+    margin-top: -20px;
+  }
+  #colour-container {
+    display: flex;
+    justify-content: center;
+  }
+  #colour-container button {
+    padding: 40px;
+  }
 }
